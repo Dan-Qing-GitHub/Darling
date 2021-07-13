@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(230, 233, 236);
+        }
+        .container{
+            width: 1000px;
+            height: 450px;
+            margin: 60px auto;
+            position: relative;
+        }
+        .pic3{
+            left: 600px;
+            top: 90px;
+            transform: rotate(25deg);
+            z-index: 3;
+        }
+        .container img{
+            padding: 10px 10px 15px;
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 3px rgb(50, 50, 50,0.4);
+            transition: all 0.5s ease-in;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        .hpic{
+            width:250px;
+            margin-right: 1%;
+        }
+        .spic{
+            height:250px;
+            margin-right: 1%;
+        }
+        .pic1{
+            left: 50px;
+            top: 50px;
+            transform: rotate(15deg);
+        }
+        .pic2{
+            left: 350px;
+            top: 90px;
+            transform: rotate(-15deg);
+        }
+       
+        .pic4{
+            left: 320px;
+            top: 300px;
+            transform: rotate(15deg);
+        }
+        .pic5{
+            left: 605px;
+            top: 250px;
+            transform: rotate(-35deg);
+            
+        }
+        .pic6{
+            left: 105px;
+            top: 200px;
+            transform: rotate(-15deg);
+        }
+        
+       
+        .container>img:hover{
+            box-shadow: 15px 15px 20px rgb(50, 50, 50,0.4);
+            transform:rotate(0deg)scale(2);
+            position: absolute;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="pic1 hpic" src="./云南1.jpg" >
+        <img class="pic2 spic" src="./云南2.jpg" >
+        <img class=" pic3 spic " src="./云南3.jpg" >
+        <img class="hpic pic4" src="./云南4.jpg" >
+        <img class="spic pic5" src="./云南5.jpg" >
+        <img class="spic pic6" src="./云南6.jpg" >
+        
+    </div>
+</body>
+</html>
